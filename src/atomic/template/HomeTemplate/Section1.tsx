@@ -6,21 +6,21 @@ import {
 } from "@phosphor-icons/react/dist/ssr";
 import Link from "next/link";
 
-export interface HomeTemplateProps {
+export interface Section1Props {
   whatsappLink: string;
   githubLink: string;
   gitlabLink: string;
   linkedinLink: string;
 }
-export function HomeTemplate({
+export function Section1({
   githubLink,
   gitlabLink,
   linkedinLink,
   whatsappLink,
-}: HomeTemplateProps) {
+}: Section1Props) {
   return (
     <div className="flex flex-col justify-between h-screen p-20">
-      <header className="flex justify-between">
+      <div className="flex justify-between">
         <h1>F. RODRIGO ROCHA</h1>
 
         <div className="flex">
@@ -37,12 +37,12 @@ export function HomeTemplate({
             <LinkedinLogo size={30} />
           </Link>
         </div>
-      </header>
+      </div>
 
-      <footer className="flex justify-between items-end ">
+      <div className="flex justify-between items-end ">
         <p>© 2024 Rodrigo Rocha. All rights reserved.</p>
         <div className="w-[40vw] h-[25vw] bg-secondary shadow-xl shadow-black rounded-xl"></div>
-      </footer>
+      </div>
     </div>
   );
 }
