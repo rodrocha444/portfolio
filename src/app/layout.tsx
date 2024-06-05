@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
+import { twJoin } from "tailwind-merge";
 import "./globals.css";
 
 const jetbrains = JetBrains_Mono({ subsets: ["latin"] });
@@ -16,7 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={jetbrains.className}>{children}</body>
+      <body className={twJoin(jetbrains.className, "bg-black text-white")}>
+        {children}
+      </body>
     </html>
   );
 }
