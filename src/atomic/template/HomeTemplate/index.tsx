@@ -18,37 +18,43 @@ export function HomeTemplate({
   whatsappLink,
 }: HomeTemplateProps) {
   return (
-    <div>
-      <header className="flex justify-between p-[2.5rem] text-3xl font-bold items-center">
-        <h1>F. RODRIGO ROCHA</h1>
+    <div className="p-10 h-screen select-none">
+      <div className="h-full border-[#333] border relative">
+        <header className="flex justify-end p-[2.5rem] text-3xl font-bold items-center relative z-10">
+          <div className="flex gap-3">
+            <Link
+              href={githubLink}
+              className="hover:opacity-70 transition-opacity"
+            >
+              <GithubLogo weight="light" size={40} />
+            </Link>
+            <Link
+              href={gitlabLink}
+              className="hover:opacity-70 transition-opacity"
+            >
+              <GitlabLogo weight="light" size={40} />
+            </Link>
+            <Link
+              href={whatsappLink}
+              className="hover:opacity-70 transition-opacity"
+            >
+              <WhatsappLogo weight="light" size={40} />
+            </Link>
+            <Link
+              href={linkedinLink}
+              className="hover:opacity-70 transition-opacity"
+            >
+              <LinkedinLogo weight="light" size={40} />
+            </Link>
+          </div>
+        </header>
 
-        <div className="flex gap-2">
-          <Link
-            href={githubLink}
-            className="hover:opacity-70 transition-opacity"
-          >
-            <GithubLogo size={30} />
-          </Link>
-          <Link
-            href={gitlabLink}
-            className="hover:opacity-70 transition-opacity"
-          >
-            <GitlabLogo size={30} />
-          </Link>
-          <Link
-            href={whatsappLink}
-            className="hover:opacity-70 transition-opacity"
-          >
-            <WhatsappLogo size={30} />
-          </Link>
-          <Link
-            href={linkedinLink}
-            className="hover:opacity-70 transition-opacity"
-          >
-            <LinkedinLogo size={30} />
-          </Link>
+        <div className="w-full h-full absolute top-0 flex items-center justify-center flex-col gap-1 z-0 ">
+          <p className="text-lg">Hello, my name is</p>
+          <p className="uppercase text-8xl font-extrabold">Rodrigo Rocha</p>
+          <p className="text-lg">I&apos;m a developer full stack</p>
         </div>
-      </header>
+      </div>
     </div>
   );
 }
