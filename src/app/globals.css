@@ -2,8 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+}
+
+html {
+    overflow: hidden;
+    overscroll-behavior: none;
 }
