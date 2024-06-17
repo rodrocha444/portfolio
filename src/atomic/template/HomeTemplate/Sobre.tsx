@@ -20,8 +20,9 @@ export function Sobre() {
               "flex flex-col gap-1",
             )}
           >
-            <p className="leading-none text-sm font-light">{item.date}</p>
+            <p className="leading-none text-sm font-light ">{item.date}</p>
             <p className="text-3xl font-semibold">{item.title}</p>
+            <p className="leading-none text-sm text-black">{item.enterprise}</p>
             <p className="text-sm font-light">{item.description}</p>
           </div>
         </div>
