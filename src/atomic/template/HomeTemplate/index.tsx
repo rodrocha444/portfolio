@@ -12,19 +12,7 @@ interface Page {
   backgroundColor: string;
 }
 
-export interface HomeTemplateProps {
-  whatsappLink: string;
-  githubLink: string;
-  gitlabLink: string;
-  linkedinLink: string;
-}
-
-export function HomeTemplate({
-  githubLink,
-  gitlabLink,
-  linkedinLink,
-  whatsappLink,
-}: HomeTemplateProps) {
+export function HomeTemplate() {
   const [activePage, setActivePage] = useState(0);
   const [touchStart, setTouchStart] = useState<TouchList[0]>();
 
@@ -108,13 +96,7 @@ export function HomeTemplate({
         className="h-full border-[#333] border overflow-hidden "
         onWheel={handleScroll}
       >
-        <Header
-          className="absolute top-0 right-0 p-[5rem]"
-          githubLink={githubLink}
-          gitlabLink={gitlabLink}
-          linkedinLink={linkedinLink}
-          whatsappLink={whatsappLink}
-        />
+        <Header className="absolute top-0 right-0 p-[5rem]" />
 
         {pages.map((page) => page.component)}
       </div>

@@ -1,3 +1,4 @@
+import { ptBr } from "@/intl/ptBr";
 import {
   GithubLogo,
   GitlabLogo,
@@ -8,19 +9,9 @@ import Link from "next/link";
 import { twMerge } from "tailwind-merge";
 
 export interface HeaderProps {
-  githubLink: string;
-  gitlabLink: string;
-  linkedinLink: string;
-  whatsappLink: string;
   className?: string;
 }
-export function Header({
-  githubLink,
-  gitlabLink,
-  linkedinLink,
-  whatsappLink,
-  className,
-}: HeaderProps) {
+export function Header({ className }: HeaderProps) {
   return (
     <header
       className={twMerge(
@@ -29,20 +20,26 @@ export function Header({
       )}
     >
       <div className="flex gap-3">
-        <Link href={githubLink} className="hover:opacity-70 transition-opacity">
+        <Link
+          href={ptBr.links.github}
+          className="hover:opacity-70 transition-opacity"
+        >
           <GithubLogo size={32} />
         </Link>
-        <Link href={gitlabLink} className="hover:opacity-70 transition-opacity">
+        <Link
+          href={ptBr.links.gitlab}
+          className="hover:opacity-70 transition-opacity"
+        >
           <GitlabLogo size={32} />
         </Link>
         <Link
-          href={whatsappLink}
+          href={ptBr.links.whatsapp}
           className="hover:opacity-70 transition-opacity"
         >
           <WhatsappLogo size={32} />
         </Link>
         <Link
-          href={linkedinLink}
+          href={ptBr.links.linkedin}
           className="hover:opacity-70 transition-opacity"
         >
           <LinkedinLogo size={32} />

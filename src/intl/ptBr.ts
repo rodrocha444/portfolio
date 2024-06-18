@@ -16,9 +16,21 @@ interface PtBr {
     img: string;
     link: string;
   }>;
+  links: {
+    github: string;
+    gitlab: string;
+    linkedin: string;
+    whatsapp: string;
+  };
 }
 
 export const ptBr: PtBr = {
+  links: {
+    github: "https://github.com/rodrocha444",
+    gitlab: "https://gitlab.com/rodrocha444",
+    linkedin: "https://www.linkedin.com/in/f-rodrigo-rocha/",
+    whatsapp: "https://wa.me/5588996850205",
+  },
   apresentacao: {
     intro: "Olá, meu nome é",
     name: "Rodrigo Rocha",

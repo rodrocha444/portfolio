@@ -1,3 +1,4 @@
+import { ptBr } from "@/intl/ptBr";
 import {
   GithubLogo,
   GitlabLogo,
@@ -13,25 +14,34 @@ export function Contato() {
       </p>
 
       <div className="grid grid-cols-2 gap-10 flex-1 content-center mb-[5rem]">
-        <div className="bg-gray shadow-lg w-[12rem] h-[12rem] flex flex-col justify-center items-center rounded-md hover:opacity-70 hover:cursor-pointer transition-opacity">
-          <LinkedinLogo size={60} />
-          <p>f-rodrigo-rocha</p>
-        </div>
-
-        <div className="bg-gray shadow-lg w-[12rem] h-[12rem] flex flex-col justify-center items-center rounded-md hover:opacity-70 hover:cursor-pointer transition-opacity">
-          <WhatsappLogo size={60} />
-          <p>+5588996850205</p>
-        </div>
-
-        <div className="bg-gray shadow-lg w-[12rem] h-[12rem] flex flex-col justify-center items-center rounded-md hover:opacity-70 hover:cursor-pointer transition-opacity">
+        <a
+          href={ptBr.links.gitlab}
+          className="bg-gray shadow-lg w-[12rem] h-[12rem] flex flex-col justify-center items-center rounded-md hover:scale-105 hover:cursor-pointer transition-transform"
+        >
           <GitlabLogo size={60} />
           <p>rodrocha444</p>
-        </div>
-
-        <div className="bg-gray shadow-lg w-[12rem] h-[12rem] flex flex-col justify-center items-center rounded-md hover:opacity-70 hover:cursor-pointer transition-opacity">
+        </a>
+        <a
+          href={ptBr.links.github}
+          className="bg-gray shadow-lg w-[12rem] h-[12rem] flex flex-col justify-center items-center rounded-md hover:scale-105 hover:cursor-pointer transition-transform"
+        >
           <GithubLogo size={60} />
           <p>rodrocha444</p>
-        </div>
+        </a>
+        <a
+          href={ptBr.links.linkedin}
+          className="bg-gray shadow-lg w-[12rem] h-[12rem] flex flex-col justify-center items-center rounded-md hover:scale-105 hover:cursor-pointer transition-transform"
+        >
+          <LinkedinLogo size={60} />
+          <p>f-rodrigo-rocha</p>
+        </a>
+        <a
+          href={ptBr.links.whatsapp}
+          className="bg-gray shadow-lg w-[12rem] h-[12rem] flex flex-col justify-center items-center rounded-md hover:scale-105 hover:cursor-pointer transition-transform"
+        >
+          <WhatsappLogo size={60} />
+          <p>+5588996850205</p>
+        </a>
       </div>
     </div>
   );
