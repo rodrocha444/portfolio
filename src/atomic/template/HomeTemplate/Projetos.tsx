@@ -3,8 +3,8 @@ import { ptBr } from "@/intl/ptBr";
 
 export function Projetos() {
   return (
-    <div className="overflow-hidden h-full" id="projetos">
-      <p className="uppercase text-4xl font-black text-center p-[2.5rem]">
+    <div className="overflow-hidden h-full " id="projetos">
+      <p className="uppercase text-4xl font-black p-[2.5rem] w-full">
         Principais Projetos
       </p>
 

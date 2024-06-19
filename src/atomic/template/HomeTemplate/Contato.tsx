@@ -8,10 +8,8 @@ import {
 
 export function Contato() {
   return (
-    <div className="flex flex-col items-center h-full" id="contato">
-      <p className="uppercase text-4xl font-black text-center p-[2.5rem]">
-        Contato
-      </p>
+    <div className="flex flex-col items-center h-full w-full" id="contato">
+      <p className="uppercase text-4xl font-black p-[2.5rem] w-full">Contato</p>
 
       <div className="grid grid-cols-2 gap-10 flex-1 content-center mb-[5rem]">
         <a

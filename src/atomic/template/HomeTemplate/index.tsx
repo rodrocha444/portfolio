@@ -87,19 +87,15 @@ export function HomeTemplate() {
 
   return (
     <div
-      className="p-10 h-screen select-none relative transition-colors duration-700"
+      className="h-screen select-none relative transition-colors duration-700 overflow-hidden"
       style={{ backgroundColor: mainBackgroundColor }}
       onTouchStart={handleTouch}
       onTouchEnd={handleTouch}
+      onWheel={handleScroll}
     >
-      <div
-        className="h-full border-[#333] border overflow-hidden "
-        onWheel={handleScroll}
-      >
-        <Header className="absolute top-0 right-0 p-[5rem]" />
+      <Header className="fixed top-0 right-0 p-[2.5rem]" />
 
-        {pages.map((page) => page.component)}
-      </div>
+      {pages.map((page) => page.component)}
     </div>
   );
 }

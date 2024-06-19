@@ -85,5 +85,12 @@ Foi uma experiência nova, em um ambiente acolhedor e que acrescentou na minha f
       img: "https://github.com/rodrocha444/brainny-project/assets/58188119/e97bc9ac-6c56-4d44-9279-0b22eabfa8ec",
       link: "https://github.com/rodrocha444/brainny-project",
     },
+    {
+      title: "Meu Portfólio",
+      description:
+        "Projeto de criação de um portfólio pessoal, para apresentação de projetos e informações sobre mim",
+      img: "https://github.com/rodrocha444/portfolio/assets/58188119/4bf15d8d-2c46-4ddf-960f-fff552bd2e9f",
+      link: "https://github.com/rodrocha444/portfolio",
+    },
   ],
 };
